@@ -7,12 +7,14 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace API.Services;
 
-public class TokenService : ITokenService
+public class TokenService(IConfiguration config) : ITokenService
 {
-    public string CreatToken(AppUser user)
+    private readonly IConfiguration _config = config;
+
+    public string CreateToken(AppUser user)
     {
-        var tokenKey = config["TokenKey"] ?? throw new Exception("Cannot access tokenKey from appsettings ");
-        if (tokenKey.Lengh < 64) throw new Exception("Your tokenKey needs to bee longer");
+        var tokenKey = _config["TokenKey"] ?? throw new Exception("Cannot access tokenKey from appsettings ");
+        if (tokenKey.Length < 64) throw new Exception("Your tokenKey needs to bee longer");
         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(tokenKey));
         var claims = new List<Claim>
         {
