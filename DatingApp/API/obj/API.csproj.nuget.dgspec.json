@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\ASP.NET(home)\\Dating-App\\DatingApp\\API\\API.csproj": {}
+    "/Users/aabbasinia/Documents/Projects/Dating-App/Dating-App/DatingApp/API/API.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\ASP.NET(home)\\Dating-App\\DatingApp\\API\\API.csproj": {
+    "/Users/aabbasinia/Documents/Projects/Dating-App/Dating-App/DatingApp/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\ASP.NET(home)\\Dating-App\\DatingApp\\API\\API.csproj",
+        "projectUniqueName": "/Users/aabbasinia/Documents/Projects/Dating-App/Dating-App/DatingApp/API/API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\Projects\\ASP.NET(home)\\Dating-App\\DatingApp\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\ACG\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\ASP.NET(home)\\Dating-App\\DatingApp\\API\\obj\\",
+        "projectPath": "/Users/aabbasinia/Documents/Projects/Dating-App/Dating-App/DatingApp/API/API.csproj",
+        "packagesPath": "/Users/aabbasinia/.nuget/packages/",
+        "outputPath": "/Users/aabbasinia/Documents/Projects/Dating-App/Dating-App/DatingApp/API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ACG\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/aabbasinia/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -47,6 +47,14 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
@@ -96,24 +104,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[9.0.11, 9.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[9.0.11, 9.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -122,7 +112,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
